@@ -54,7 +54,7 @@ public class Lotto {
 		if (input < 1000) {
 			System.out.println("입력 금액이 너무 적습니다. 로또번호 구입 실패!!!");
 			buyLotto();
-		} else if (input >= 99999999) {
+		} else if (input >= 101000) {
 			System.out.println("\n입력 금액이 너무 많습니다. 로또번호 구입 실패!!!");
 			buyLotto();
 		} else {
