@@ -45,7 +45,7 @@ public class PersonSaxTest {
 
 			// factory를 사용할 SAXParser 의 새로운 객체 생성
 			SAXParser parser = factory.newSAXParser();
-			// PeopleSaxHandler 클래스 선언
+			// PeopleSaxHandler 클래스 선언해서 생성자 호출
 			PeopleSaxHandler handler = new PeopleSaxHandler();
 			// 생성된 file과 handler를 통해서 SAXParser객체로 파싱해 가져온다.
 			parser.parse(file, handler);
