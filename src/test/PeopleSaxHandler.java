@@ -28,6 +28,12 @@ public class PeopleSaxHandler extends DefaultHandler{
 			personList.add(person);
 		}
 	}
+	
+	public void characters(char[] ch, int start, int length) {
+		//태그와 태그 사이의 내용을 처리
+		str = new String(ch,start,length);
+	}
+	
 	public void endElement(String uri, String localName, String name) {
 		//끝 태그를 만났을 때,
 		if(name.equals("age")) {
@@ -39,10 +45,6 @@ public class PeopleSaxHandler extends DefaultHandler{
 		}else if(name.equals("role")) {
 			person.setRole(str);
 		}
-	}
-	public void characters(char[] ch, int start, int length) {
-		//태그와 태그 사이의 내용을 처리
-		str = new String(ch,start,length);
 	}
     public List<Person> getPersonList(){
 		return personList;
