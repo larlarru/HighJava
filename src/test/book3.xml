@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<전화번호부>
+	<person>
+		<name>이순신</name>
+		<tel>010-1111-1111</tel>
+		<address>서울</address>
+	</person>
+	<person>
+		<name>홍길동</name>
+		<tel>010-2222-2222</tel>
+		<address>경기</address>
+	</person>
+	<person>
+		<name>이몽룡</name>
+		<tel>010-3333-3333</tel>
+		<address>부산</address>
+	</person>
+	<person>
+		<name>성춘향</name>
+		<tel>010-5555-5555</tel>
+		<address>대전</address>
+	</person>
+</전화번호부>
+
